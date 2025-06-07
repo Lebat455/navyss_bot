@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: navyss-bot
+    runtime: python
+    buildCommand: ""
+    startCommand: "python navyss_bot_final_full_merge.py"
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
